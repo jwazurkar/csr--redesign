@@ -1,0 +1,606 @@
+/* OVERRIDES */
+.one, .two {
+  float: left;
+  width: 351px;
+}
+
+.one {
+  margin-right: 20px;
+}
+
+/* NEW STYLES */
+.value-chain .button, .materiality .button, .progress-summary .button, .working-with-farmers h2 a,
+.working-with-manufacturers h2 a, .working-with-farmers p,
+.working-with-manufacturers p,
+.big-image-callout .case-study p, .supply-chain .case-study a, .our-products h2, .our-products p, .sustainable-products .case-study p, .sustainable-products .case-study a, .grounds-to-grow, .our-customers a, .our-customers p, .global-warming {
+  position: absolute;
+}
+
+body {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #262525;
+  direction: ltr;
+}
+
+h1, h2, h3, h4, h5, h6,
+.attribution,
+blockquote {
+  font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+h1, h3,
+.attribution,
+.blockquote-attribution {
+  color: #4d7023;
+}
+
+h2 {
+  color: #e28f26;
+}
+
+h3 {
+  font-style: italic;
+}
+
+a {
+  color: #4d7023;
+}
+a:hover {
+  color: #557c26;
+}
+
+blockquote {
+  margin: 0;
+  padding: 1em 40px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAdCAYAAADPa766AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBODBDNzc1ODYwMjA2ODExOTk0Q0MzRTdBRjFBRDBGMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0OTk5MDdEQzZDOUMxMUUyQkNEMEVEMjc2NDM4NzAzNCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0OTk5MDdEQjZDOUMxMUUyQkNEMEVEMjc2NDM4NzAzNCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA5ODAxMTc0MDcyMDY4MTFBRkZEQkRBNzkxMDdDOTg4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkE4MEM3NzU4NjAyMDY4MTE5OTRDQzNFN0FGMUFEMEYwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+B6i5PgAAAcxJREFUeNqsltFxgzAMhqkv73iDsEG9AWzQbFAyQegEzQh0gsAGdAOYIGSCkg3IBrVz8h11bVk26E6XA9v/fRKylJe+75NAq6Q30uckzrj0UnqtHvI8f77cBQp06qz0g/QiAkKAxh70znqBBQj0AJHAbx0B0QOEsk8IiAyiBV6N9ydIMcXUvqv01HjfDMMgKCAaIkXWKRAXx5rSzXwgPogWCjcWQtlRFmuHgWQEiJKQTayOjnD7nDWib8caCO4J5A+EC6S2FGYIRBIKYQNR1+ndIfBNhDgjgXzYIEwQ7tok7U6EyKA/uAJx1gwzIkmR6qe0dFcgD18gbBHJCakLykAqFp3XNp9mCghGS23lFZKNxneYAjISa+NtxfkniFgMIpvNEFGG7Dkga+pzTVCDHAPxjfMUrvQP8pl8Gnu4TZMr+xQQc+LWkcNPB3WxZZBh6UJghCXiEPN2VqqVyTpLzazEgohkvYktQPgGIHwLkM2NwX+PUJssA22VRixI53kO1mBA9hUgcLdcP/V8C9BobRnRA4si9EDaeQnrPrvZBiQz2jSWmQGu3IgMt8ITUAt7/v0l2BnDrYIWXlq+J2WKjgB7MPrEDBqT6+CvAAMAygBmL9tb24wAAAAASUVORK5CYII=) no-repeat left top;
+  color: #60523E;
+  font-size: 1.8333em;
+}
+blockquote img {
+  max-width: 100px;
+}
+
+.blockquote-attribution {
+  display: block;
+  margin-top: 20px;
+  border-top: 1px solid silver;
+  padding-top: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+.ir br {
+  display: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-with-image figure,
+.case-study figure {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+figcaption {
+  margin-top: 10px;
+  max-width: 250px;
+  font-size: 10px;
+  color: #999;
+  text-align: center;
+}
+
+.page-title,
+.full-image,
+.full-image figcaption,
+.video-content {
+  max-width: 762px;
+}
+
+.attribution {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.full-image {
+  height: auto;
+}
+
+.video-content {
+  margin: 20px 0;
+}
+
+.case-study {
+  margin-right: 0;
+  margin-bottom: 20px;
+  padding: 0 20px 20px 20px;
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+.case-study span {
+  display: block;
+  margin: -10px -21px 10px -21px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: normal;
+  text-shadow: 1px 1px rgba(64, 101, 17, 0.75);
+}
+
+/* NAV */
+nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+nav li {
+  padding: 5% 0 4.9689% 6%;
+  display: block;
+  line-height: 1.65;
+}
+nav li:hover {
+  background-color: #eee;
+}
+nav h2:hover {
+  background-color: #eee;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+}
+
+.primary-nav {
+  padding: 5%;
+  border-bottom: solid 1px #cccccc;
+  border-collapse: collapse;
+  font-size: 1.2em;
+}
+.primary-nav a:visited {
+  color: #e28f26;
+}
+.primary-nav .open {
+  border-bottom: none;
+}
+
+.secondary-nav {
+  border-bottom: solid 1px #cccccc;
+}
+.secondary-nav a {
+  color: #e28f26;
+}
+
+.tertiary-nav li {
+  padding-left: 18%;
+}
+.tertiary-nav a {
+  color: #4d7023;
+}
+
+/* REPORT PAGE */
+.test,
+.test2 {
+  float: left;
+  margin: -10px 2px -10px 0;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-size: 1.8333em;
+}
+
+.test {
+  color: #4d7023;
+}
+
+.test2 {
+  color: #13587d;
+}
+
+.report-button {
+  display: inline-block;
+  border-radius: 20px;
+  border: 5px solid #eaeaea;
+  background: url(../images/swoop.png) #bf5b20 no-repeat right center;
+  background-size: 22px 12px;
+  padding-right: 35px;
+  text-decoration: none;
+  color: #fff;
+}
+.report-button:hover {
+  background-color: #b23f03;
+}
+.report-button:visited {
+  color: #fff;
+}
+
+.supply-chain h1,
+.sustainable-products h1,
+.thriving h1 {
+  margin-top: 20px;
+}
+
+.sustainability-report h1 {
+  background: url(../images/sprite.png) 0px 0px no-repeat;
+  width: 762px;
+  height: 115px;
+}
+
+.supply-chain h1 {
+  background: url(../images/sprite.png) 0px -117px no-repeat;
+  width: 762px;
+  height: 115px;
+}
+
+.sustainable-products h1 {
+  background: url(../images/sprite.png) 0px -234px no-repeat;
+  width: 762px;
+  height: 115px;
+}
+
+.thriving h1 {
+  background: url(../images/sprite.png) 0px -351px no-repeat;
+  width: 762px;
+  height: 98px;
+}
+
+.our-approach {
+  float: left;
+  width: 56%;
+}
+
+.download-report {
+  float: right;
+  width: 41%;
+}
+.download-report figure {
+  background-color: #eaeaea;
+}
+.download-report img {
+  border: 10px solid #eaeaea;
+}
+.download-report figcaption {
+  width: 292px;
+}
+.download-report .button {
+  width: 100%;
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.download-report .report-button {
+  display: block;
+}
+
+.our-approach h2 {
+  color: #4d7023;
+  font-size: 1.8333em;
+}
+
+.quote-image-right img,
+.quote-image-left img {
+  margin-top: 30px;
+  border: 3px solid #bfbfbf;
+}
+
+.quote-image-right blockquote {
+  margin-right: 20px;
+  padding-right: 0;
+  max-width: 582px;
+}
+
+.quote-image-left blockquote {
+  margin-left: 20px;
+  padding-right: 10px;
+  max-width: 572px;
+}
+
+.value-chain, .materiality, .progress-summary {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 210px;
+  height: 302px;
+  vertical-align: top;
+  border: 4px solid #4d7023;
+  padding: 10px;
+}
+.value-chain h2, .materiality h2, .progress-summary h2 {
+  color: #4d7023;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.value-chain img, .materiality img, .progress-summary img {
+  width: 208px;
+  margin: 20px 0;
+  border: 1px solid #d6d6d6;
+}
+.value-chain img:hover, .materiality img:hover, .progress-summary img:hover {
+  width: 204px;
+  margin: 19px 0;
+  border: 3px solid #4d7023;
+}
+.value-chain p, .materiality p, .progress-summary p {
+  text-align: center;
+  font-size: 14px;
+}
+.value-chain .button, .materiality .button, .progress-summary .button {
+  bottom: 10px;
+  max-width: 176px;
+}
+
+.value-chain .button {
+  left: 48px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+}
+
+.progress-summary {
+  margin-right: 0;
+}
+.progress-summary .button {
+  left: 11px;
+}
+
+.big-image-callout {
+  position: relative;
+}
+.big-image-callout .case-study {
+  margin: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.supply-chain .big-image-callout {
+  background: url(../images/sprite.png) 0px -451px no-repeat;
+  width: 762px;
+  height: 852px;
+}
+
+.working-with-farmers h2 a,
+.working-with-manufacturers h2 a {
+  height: 53px;
+}
+
+.working-with-farmers p,
+.working-with-manufacturers p,
+.big-image-callout .case-study p {
+  margin: 0;
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.big-image-callout .case-study p {
+  background-color: rgba(1, 1, 1, 0.2);
+}
+
+.working-with-farmers h2 a {
+  left: 456px;
+  top: 11px;
+  width: 294px;
+}
+
+.working-with-farmers p {
+  left: 456px;
+  top: 66px;
+  width: 274px;
+  height: 196px;
+}
+
+.working-with-manufacturers h2 a {
+  top: 340px;
+  left: 10px;
+  width: 380px;
+}
+
+.working-with-manufacturers p {
+  left: 10px;
+  top: 395px;
+  width: 360px;
+  height: 170px;
+}
+
+.supply-chain .case-study a {
+  left: 409px;
+  top: 465px;
+  width: 325px;
+  height: 42px;
+}
+
+.supply-chain .case-study p {
+  left: 409px;
+  top: 509px;
+  width: 305px;
+  height: 134px;
+}
+
+.sustainable-products .big-image-callout {
+  background: url(../images/sprite.png) 0px -1305px no-repeat;
+  width: 762px;
+  height: 1529px;
+}
+
+.our-products h2,
+.our-products p {
+  left: 229px;
+}
+
+.our-products h2 {
+  top: 9px;
+  width: 477px;
+  height: 55px;
+}
+
+.our-products p {
+  margin: 0;
+  padding: 5px 10px;
+  top: 64px;
+  width: 457px;
+  height: 57px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.sustainable-products .case-study p,
+.sustainable-products .case-study a {
+  left: 461px;
+  width: 234px;
+}
+
+.sustainable-products .case-study p {
+  top: 187px;
+}
+
+.sustainable-products .case-study a {
+  top: 160px;
+  height: 27px;
+}
+
+.our-customers a,
+.grounds-to-grow {
+  top: 498px;
+}
+
+.grounds-to-grow {
+  left: 323px;
+  width: 424px;
+  height: 268px;
+}
+
+.our-customers a {
+  width: 297px;
+  height: 56px;
+}
+
+.our-customers p {
+  top: 538px;
+  width: 277px;
+  height: 203px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.global-warming {
+  top: 777px;
+  width: 250px;
+  height: 295px;
+  padding: 10px 15px;
+}
+
+.global-warming h2 {
+  font-size: 27px;
+  line-height: 1;
+  color: #13587d;
+}
+
+.global-warming p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.thriving .big-image-callout {
+  background: url(../images/sprite.png) 0px -2836px no-repeat;
+  width: 762px;
+  height: 1050px;
+}
+
+.thriving-communities a,
+.thriving-communities p,
+.thriving-people a,
+.thriving-people p,
+.health-safety a,
+.health-safety p,
+.thriving .case-study {
+  position: absolute;
+}
+
+.thriving-communities a,
+.thriving-communities p {
+  left: 37px;
+}
+
+.thriving-communities a {
+  top: 408px;
+  width: 450px;
+  height: 55px;
+}
+
+.thriving-communities p {
+  top: 450px;
+  padding: 10px;
+  width: 430px;
+  height: 90px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.thriving-people a,
+.thriving-people p {
+  left: 519px;
+}
+
+.thriving-people a {
+  top: 270px;
+  width: 228px;
+  height: 55px;
+}
+
+.thriving-people p {
+  top: 312px;
+  padding: 10px;
+  width: 208px;
+  height: 230px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.health-safety {
+  outline: 1px solid lime;
+}
+
+.thriving .case-study {
+  outline: 1px solid cyan;
+}
+
+.road-ahead {
+  outline: 1px solid hotpink;
+}

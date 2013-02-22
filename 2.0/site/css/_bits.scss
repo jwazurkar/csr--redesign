@@ -1,0 +1,37 @@
+/* text */
+$serif: Georgia,"Times New Roman",Times,serif;
+$sanserif: Helvetica, Arial, sans-serif;
+@mixin italic {
+	font-style: italic;
+}
+@mixin bold {
+	font-weight: bold;
+}
+@mixin font-size( $decimal-size, $keyword: null ) {
+  $base-font-multiplier: 1;
+  @if $keyword { font-size: $keyword; }
+  @else { font-size: $decimal-size * $base-font-multiplier * 12px; }
+  font-size: $decimal-size * 1rem;
+}
+
+
+/* colors */
+$maintext: #262525;
+$dgreen: #4d7023;
+$white: #fff;
+$yellow: #e28f26;
+$blue: #13587d;
+$dgray: #999;
+$mgray: #ccc;
+$lgray: #eee;
+$bordgray: #eaeaea;
+$hover: #557c26;
+$morange: #bf5b20;
+$dorange: #b23f03;
+/*
+
+@mixin box-size($borbox: border-box) {}
+	-moz-box-sizing: $borbox;
+	-webkit-box-sizing: $borbox;
+	box-sizing: $borbox;
+}*/

@@ -1,0 +1,196 @@
+/* GLOBAL STYLES */
+body {
+	color: #231F20;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+h1 {
+	font-size: 21px;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 12px;
+}
+
+p,
+li {
+	line-height: 17px;
+}
+
+ul {
+	padding-left: 16px;
+	list-style: disc;
+}
+
+li {
+	padding-left: 10px;
+}
+
+li ul {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding-left: 20px;
+}
+
+a {
+	color: #231f20;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+
+a img {
+	border: none;
+}
+
+/* HELPER CLASSES */
+
+.strong {
+	font-weight: bold;
+}
+
+.contact {
+	line-height: 14px;
+}
+
+.customer-care,
+nav,
+ul.nav li,
+section,
+aside {
+	border-width: 1px;
+	border-bottom-color: #999999;
+}
+
+/* CUSTOMER CARE */
+.customer-care {
+	margin-bottom: 16px;
+	border-bottom-style: solid;
+}
+
+.customer-care p {
+	text-align: right;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 12px;
+}
+
+/* NAV */
+
+nav {
+	border-left-style: dashed;
+	padding: 8px 0 16px 16px;
+}
+
+ul.nav {
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.nav a {
+	color: #5c8727;
+}
+
+ul.nav li {
+	display: block;
+	width: 124px;
+	border-bottom-style: solid;
+	padding: 8px 0;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+/* SECTION */
+section {
+	border-left-style: dashed;
+	border-right-style: dashed;
+	padding: 8px 16px 16px 16px;
+}
+
+/* ARTICLE */
+article {
+	padding: 8px 16px 16px 16px;
+}
+
+/* ASIDE */
+aside {
+	border-right-style: dashed;
+	padding: 8px 16px 16px 0;
+}
+
+aside img {
+	margin-top: 16px;
+}
+
+.section-icon {
+	direction: ltr;
+	text-indent: -99999px;
+}
+
+.building {
+  background: url(../images/icons.png) 0px 0px no-repeat;
+  display: block;
+  width: 203px;
+  height: 70px;
+}
+
+.creating {
+  background: url(../images/icons.png) 0px -72px no-repeat;
+  display: block;
+  width: 203px;
+  height: 70px;
+}
+
+.partnering {
+  background: url(../images/icons.png) -205px 0px no-repeat;
+  display: block;
+  width: 203px;
+  height: 70px;
+}
+
+.protecting {
+  background: url(../images/icons.png) -205px -72px no-repeat;
+  display: block;
+  width: 203px;
+  height: 70px;
+}
+
+.supporting {
+  background: url(../images/icons.png) 0px -144px no-repeat;
+  display: block;
+  width: 203px;
+  height: 70px;
+}
+
+.working {
+  background: url(../images/icons.png) -205px -144px no-repeat;
+  display: block;
+  width: 203px;
+  height: 70px;
+}
+
+aside li {
+	margin-bottom: 8px;
+	padding-left: 8px;
+}
+
+ul.downloads {
+	padding-left: 24px;
+	list-style-image: url(../images/pdf.png)
+}
+
+ul.related {
+	padding-left: 14px;
+	list-style: disc;
+}

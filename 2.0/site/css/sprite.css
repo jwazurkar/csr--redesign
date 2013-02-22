@@ -1,0 +1,48 @@
+.supply-chain-header {
+  background: url(../images/sprite.png) 0px -117px no-repeat;
+  display: inline-block;
+  width: 762px;
+  height: 115px;
+}
+
+.supply-chain-text {
+  background: url(../images/sprite.png) 0px -451px no-repeat;
+  display: inline-block;
+  width: 762px;
+  height: 852px;
+}
+
+.sustainability-header {
+  background: url(../images/sprite.png) 0px 0px no-repeat;
+  display: inline-block;
+  width: 762px;
+  height: 115px;
+}
+
+.sustainable-header {
+  background: url(../images/sprite.png) 0px -234px no-repeat;
+  display: inline-block;
+  width: 762px;
+  height: 115px;
+}
+
+.sustainable-products-text {
+  background: url(../images/sprite.png) 0px -1305px no-repeat;
+  display: inline-block;
+  width: 762px;
+  height: 1529px;
+}
+
+.thriving-header {
+  background: url(../images/sprite.png) 0px -351px no-repeat;
+  display: inline-block;
+  width: 762px;
+  height: 98px;
+}
+
+.thriving-text {
+  background: url(../images/sprite.png) 0px -2836px no-repeat;
+  display: inline-block;
+  width: 762px;
+  height: 1050px;
+}

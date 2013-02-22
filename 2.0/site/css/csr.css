@@ -1,0 +1,880 @@
+/*
+-----------------------------------------------
+GREEN MOUNTAIN COFFEE ROASTERS GMCR.com CSS INDEX
+Principal authors: R Sturim (GMCR), E Spence (GMCR) May 2012
+-----------------------------------------------
+
+
+1. GLOBAL STYLES
+-------------------------------------------------------------------
+1.1 Resets 
+	1.1.1 HTML5 BoilerPlate 
+	1.1.2 Twitter Bootstrap 
+1.2 Global Styles 
+1.3 Helpers
+-------------------------------------------------------------------
+
+2. CSR STYLES
+-------------------------------------------------------------------
+2.1 Containers 
+2.2 CSR General HTML 
+2.3 CSR Header 
+2.3.1 Global Nav Bar 
+2.4 CSR Main Navigation 
+2.5 CSR Main Content 
+	2.5.1 Three Column
+	2.5.2 Two Column
+		2.5.2.1 Three Across Pod
+2.6 CSR Aside (Far right column) 
+2.7 Footer
+	2.7.1 MainFooter
+	2.7.2 SubFooter
+-------------------------------------------------------------------
+
+3. Components
+-------------------------------------------------------------------
+3.1 Sider
+
+-------------------------------------------------------------------
+COLOR KEY
+-------------------------------------------------------------------
+light-gray = #E9E8E8
+olive-green = #5c8727
+green = #457608
+------------------------------------------------------------------*/
+
+/*
+1. GLOBAL STYLES
+------------------------------------------------------------------ */
+
+
+/* 1.1 Resets 
+----------------------------------------------- */
+
+/* 1.1.1 From HTML5 Boilerplate  */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+::-moz-selection { background: #ccc; color: #000; text-shadow: none; }
+::selection { background: #ccc; color: #000; text-shadow: none; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+/* 1.1.2 From Twitter Bootstap  */
+
+h1,h2,h3,h4,h5,h6{font-weight:700;color:inherit;text-rendering:optimizelegibility;margin:0;}
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight:400;color:#999;}
+h1{font-size:2.5em;line-height:1.2;}
+h2{font-size:2em;line-height:1.5;}
+h3{font-size:1.5em;line-height:1.5;}
+h4,h5,h6{line-height:1.2;}
+h6{font-size:0.9167em;color:#999;text-transform:uppercase;}
+h1 small,h2 small{font-size:1.5em;}
+h3 small,h4{font-size:1.1667em;}
+h4 small,h5{font-size:1em;}
+a img { border: none; }
+
+
+/* 1.2 Global Styles 
+----------------------------------------------- */
+
+html {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 62.5%;
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-size:1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: Georgia,"Times New Roman",Times,serif; }
+
+
+/* 1.3 Helpers 
+----------------------------------------------- */
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.serif {
+	font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+.symbolize-links a {
+	line-height:1.4em;	
+}
+
+.symbolize-links a[href$=".pdf"],
+.symbolize-links a.pdf {
+	background:  url('/images/csr/icons/pdf.png') no-repeat left top;
+	padding-left:14%;
+}
+
+.symbolize-links a[href^="mailto:"] {
+	background:  url('/images/csr/icons/sendEmail.png') no-repeat right top;
+	padding-right:11%;
+}
+
+.symbolize-links a[href^="http://"] {
+	background:  url('/images/csr/icons/externalLink.png') no-repeat right top;
+	padding-right:11%;
+}
+
+ul.bullet-less li {
+	list-style-type: none;
+}
+
+
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+
+/*
+2. CSR Styles
+------------------------------------------------------------------- */
+
+/* 2.1 Containers 
+----------------------------------------------- */
+
+header.main {
+	background: #fff url('/images/csr/header/navBackground.gif') repeat-x bottom left;
+	height:140px;
+}
+
+#main-content {
+	border-left: 1px solid #E9E8E8;
+	border-right: 1px solid #E9E8E8;	
+}
+
+.corset {
+	margin:0 auto;
+	width:78.6em;
+	padding:0 0.9%;
+	position: relative;
+}
+
+
+/* 2.2 CSR General HTML 
+----------------------------------------------- */
+
+h1 { font-size: 1.8333em; line-height:2 }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.3333em; }
+
+/* a:link, a:visited {
+	color: #5c8727;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+*/
+/* 2.3 CSR Header 
+----------------------------------------------- */
+
+#site-logo {
+	position:absolute;
+	top:44.4444%;
+	background: url('/images/csr/header/gmcrLogo.gif') no-repeat;
+}
+
+#site-logo a {
+	width: 88px;
+	height: 46px;
+	display:block;
+}
+
+#site-logo-inc {
+	position:absolute;
+	right:1.1702%;
+	top:83.3333%;	
+}
+
+#retail-sites-list {
+	position:absolute;
+	right:0.5319%;
+	top:177.7777%;
+	color: #457608;
+	text-align: right;
+	margin:0;
+	padding:0;
+}
+
+#retail-sites-list li {
+	float:left;
+	list-style-type: none;
+	border-right:solid 1px #ccc;
+	padding:0 6px; /* PADDING TO % */
+}
+
+#retail-sites-list li:last-child {
+	border:0;
+}
+
+
+/* 2.3.1 Global Nav Bar 
+----------------------------------------------- */
+header.main nav {
+	border: none;
+	position:absolute;
+	top:297.2222%;  /*this seems to cause cross-browser issues*/
+	top:107px;
+	left:-0.2127%;
+}
+
+header.main nav ul  {
+	margin:0;
+	padding:0;
+}
+
+header.main nav ul li {
+	float:left;
+	list-style: none;
+}
+
+header.main nav ul li a {
+	display:block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	height:32px;
+}
+
+header.main nav ul li {
+	background-image: url(/images/csr/navigation/sprite-global-navbar.png);
+	background-repeat:no-repeat;
+	display: block;
+	height: 33px;
+}
+
+.about-gmcr {
+	background-position:0px -140px;
+	width: 104px;
+}
+
+.about-gmcr.active,
+.about-gmcr:hover {
+	background-position:-106px -140px;
+}
+
+.careers {
+	background-position:-225px 0px;
+	width: 85px;
+}
+
+.careers:hover,
+.careers.active {
+	background-position:-225px -35px;
+}
+
+.corporate-social-responsibility {
+	background-position:0px 0px;
+	width: 223px;
+}
+
+.corporate-social-responsibility:hover,
+.corporate-social-responsibility.active {
+	background-position:0px -35px;
+}
+
+.home {
+	background-position:-225px -70px;
+	width: 66px;
+}
+
+.home:hover,
+.home.active {
+	background-position:-225px -105px;
+}
+
+.investor-relations {
+	background-position:0px -70px;
+	width: 148px;
+}
+
+.investor-relations:hover,
+.investor-relations.active {
+	background-position:0px -105px;
+}
+
+.press-room {
+	background-position:0px -175px;
+	width: 103px;
+}
+
+.press-room:hover,
+.press-room.active {
+	background-position:-105px -175px;
+}
+
+
+/* 2.4 CSR Main Content Navigation 
+----------------------------------------------- */
+
+#customer-care-number {
+	text-align:right;
+	border-bottom:dashed 1px #ccc;
+	font-size:1.3em;
+	padding:0.5319% 0;
+}
+
+#main-content > nav {
+	width:17.0212%;
+	float:left;
+	padding:1.3% 2.1% 0 0;
+	background: transparent url('/images/csr/backgrounds/vertical-dash.gif') repeat-y 170px 0px;
+}
+
+/* #main-content > nav ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+	width:100%;
+} */
+
+/* #main-content > nav ul li {
+	padding: 5% 0 4.9689% 6%;
+	display: block;
+	line-height: 1.65;
+	border-bottom: solid 1px #ccc; */
+}
+
+#main-content > nav ul li.active {
+	font-weight:bold;
+	background-color:#eee;
+}
+
+/* #main-content > nav ul a {
+	display:block;
+	color: #5c8727;
+} */
+
+#main-content > nav ul a:hover {
+	text-decoration:none;
+}
+
+/* #main-content > nav ul li:hover {
+	background-color:#eee;
+} */
+
+
+/* 2.5 CSR Main Content 
+----------------------------------------------- */
+
+#csr-main {
+	float:left;
+	padding-top:0.8em;
+}
+
+/* 2.5.1 Three Column */
+
+.three-column #csr-main {
+	width: 61.7021%;
+	padding-right:2.15%;
+	background: transparent url('/images/csr/backgrounds/vertical-dash.gif') repeat-y 590px 0px;
+}
+
+#csr-main #full-width-image {
+	width:100%;
+}
+
+#full-width-image img {
+	max-width:100%;
+	height:auto;
+}
+
+
+/* 2.5.2 Two Column */
+
+.two-column #csr-main {
+	width: 80.851%; /*target 760px*/
+}
+
+/* .two-column #csr-main section,
+#main-text {
+	border-top:dashed 1px #ccc;
+	margin:1.6% 0 0 0;
+	padding:1.6% 0;
+} */
+
+#main-text p {
+	margin:0 0 1em 0;
+	padding:0;
+}
+
+/* 2.5.2.1 Three Across Pod */
+
+
+/*.two-column #csr-main article {
+	float:left;
+	width: 36.8421%;
+	margin-right:2.5632%;
+}*/
+
+.two-column #csr-main article.three {
+	width:21.0526%; /* 160/760 = 21.0526% */
+	margin-right:0;
+}
+
+.two-column #csr-main article.image-left img {
+	float:left;
+}
+
+.two-column #csr-main article.image-left > div {
+	padding-left:38.86%;
+}
+
+.two-column #csr-main ul {
+	margin: 0 0 0 7.8263%;
+	padding: 0;
+}
+
+.two-column #csr-main ul.social-networks {
+	margin:0;
+}
+
+.two-column #csr-main ul.social-networks li {
+	float:left;
+	list-style-type: none;
+	margin-right:7.8263%;
+}
+
+.two-column #csr-main ul.social-networks li:last-child {
+	margin-right:0;	
+}
+
+.two-column #csr-main ul.social-networks li a {
+	display:block;
+	width: 40px;
+	height: 40px;	
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.two-column #csr-main ul.social-networks li a {
+	background-image: url('/images/csr/icons/sprite-social.png');
+	background-repeat:no-repeat;
+}
+
+.two-column .facebook {
+	background-position: 0px 0px ;
+}
+
+.two-column .google-plus {
+	background-position: -42px 0px;
+}
+
+.two-column .twitter {
+	background-position: 0px -42px;
+}
+
+
+/* 2.6 CSR Aside (Far right column) 
+----------------------------------------------- */
+
+#main-content > aside {
+	width:17.0212%;
+	float:left;
+	padding-top:1.4035%;
+	overflow:hidden;
+}
+
+#main-content > aside h4,
+#main-content > aside article {
+	margin-bottom:7.8035%;
+}
+
+#main-content > aside article.csr-report {
+	padding:2% 6%;
+	background-color:#fff;
+	border: solid 1px #ccc;
+}
+
+#main-content > aside article.pillar {
+	padding:6% 6% 6% 10%;
+	background-color:#5C8727;
+	color:#c5d6af;
+	font-weight:bold;
+}
+
+#main-content > aside ul {
+	margin:0 0 0 10%;
+	padding:0;
+}
+
+aside li {
+	margin-bottom:4.2654%;
+}
+
+aside .downloads {
+	/*padding:0;
+	margin:0 0 0 20px;*/
+	list-style: none;
+}
+
+aside .downloads li {
+	padding:0 0 0 4.2654%;
+	text-indent:-20px;
+	line-height:1.3;
+}
+
+/* 2.7 Footer
+----------------------------------------------- */
+
+/* 2.7.1 Main Footer
+----------------------------------------------- */
+
+footer.main {
+	border-top: solid 6px #000;
+}
+
+#footer-customer-service  {
+	padding:1.321% 0;
+}
+
+#footer-customer-service > article {
+	float: left;
+	width:13.617%;
+}
+
+#footer-customer-service h6 {
+	color:#000;
+	font-size:1em;
+	text-transform: capitalize;
+}
+
+#footer-customer-service > article ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+#footer-customer-service > article ul li {
+	font-size:0.9em;
+	line-height:1.6;
+}
+
+#footer-customer-service > aside {
+	width: 58.9361%;
+	margin:0;
+	padding:0;
+	float:right;
+}
+
+aside#footer-brands h6  {
+	height:1px;
+	width:1px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+aside#footer-brands ul  {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+aside#footer-brands ul li {
+	padding-right:2.166%;
+	float:left;
+	list-style: none;	
+}
+
+aside#footer-brands ul li a {
+	background-image: url(/images/csr/footer/brands/sprite-brands.png);
+	background-repeat:	no-repeat;
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.diedrich-logo {
+	background-position: -184px -82px;
+	width: 75px;
+	height: 60px;
+}
+
+.gmcr-logo {
+	background-position:0px 0px;
+	width: 95px;
+	height: 57px;
+}
+
+.keurig-logo {
+  background-position:-184px 0px;
+  width: 77px;
+  height: 80px;
+}
+
+.timothys-logo {
+  background-position: -97px 0px;
+  width: 85px;
+  height: 74px;
+}
+
+.tullys-logo {
+  background-position: 0px -59px;
+  width: 75px;
+  height: 88px;
+}
+
+.vanhoutte-logo {
+  background-position: -97px -76px;
+  width: 75px;
+  height: 64px;
+}
+
+
+/* 2.7.2 Subfooter
+----------------------------------------------- */
+
+#subfooter {
+	border-top:dashed 1px #ccc;
+	padding-top:1.2765%;
+	margin-bottom:3.8297%;	
+}
+
+.subfooter-identity {
+	float:left;
+	padding-left:8.5106%;
+	height:50px;
+	background: url('/images/csr/footer/gmcrLogosm.gif') no-repeat top left;
+}
+
+.subfooter-identity span {
+	display:block;
+	font-weight:bold;
+	margin-bottom:0.8431%;
+}
+
+.phone-number {
+	float:right;
+	color: #457608;
+	font-size: 1.27em;
+	font-weight:bold;	
+}
+
+/* 3. Components
+----------------------------------------------- */
+
+/* 3.1 Sider
+----------------------------------------------- */
+
+#main-promo.slider {
+	position:relative;
+	width:760px;
+}
+
+#main-promo.slider ul {
+	margin:0;
+	padding:0;
+}
+
+#main-promo.slider ul li {
+	list-style-type: none;
+}
+
+/* children sets */
+
+.child-sets {	
+	float:left;
+	width:510px;
+	position:relative;
+	z-index:10;
+}
+
+.child-sets li {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:20;
+	height:300px;
+	width:510px;
+}
+
+.child-sets li img {
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+	height:300px;
+	width:510px;
+	z-index:30;
+}
+
+.child-sets li .child-caption {
+	position:absolute;
+	bottom:0;
+	padding:10px;
+	width:490px;
+	border-top: solid 1px #666;
+	color:#fff;
+	font-size:16px;
+	background:rgb(0, 0, 0); /*old browsers fallback*/
+	background:rgba(0, 0, 0, 0.7);
+	z-index:40;
+	display:none;
+}
+
+/* parent sets */
+
+.parent-set {
+	float:right;
+	width:250px;
+}
+
+.parent-set img {
+	height:100px;
+	width:250px;
+}
+
+.parent-set li.active,
+.parent-set li:hover {
+	-moz-opacity: 1;
+	opacity: 1;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+.parent-set li {
+	cursor:pointer;
+	-moz-opacity: 0.50;
+	opacity: 0.50;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+div.caption {
+	padding: 12px;
+	width: 734px;
+	border: solid 1px #ddd;
+	border-width:1px 1px 0 1px;
+	color:#222;
+	text-transform: capitalize;
+	font-weight:bold;
+	font-size:20px;
+	text-shadow: 1px 1px 1px #fff;
+
+	background: rgb(226,226,226); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UyZTJlMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2RiZGJkYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2QxZDFkMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZWZlZmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,226,226,1)), color-stop(50%,rgba(219,219,219,1)), color-stop(51%,rgba(209,209,209,1)), color-stop(100%,rgba(254,254,254,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-8 */
+}
+
+/* fader controls */
+
+#fader-controls {
+	position: absolute;
+	top: 322px;
+	right: 10px;
+	top:-30px;
+}
+	
+#fader-controls a.selected {
+    background-color: #688f36;
+}
+
+#fader-controls a  {
+	outline: 0px;
+    background-color: #999999;
+    border-radius: 6px 6px 6px 6px;
+    display: inline-block;
+    height: 0;
+    margin: 0 3px;
+    padding: 6px;
+    text-indent: -9999px;
+}
+
+/* Donations CSS */
+
+.donation-control 
+{
+	margin-bottom:10px;
+}
+
+.donation-control .feedback, .donation-control .red, .error
+{
+	color:Red;
+}
+
